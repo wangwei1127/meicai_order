@@ -1,0 +1,112 @@
+/* line 48, common/*.png */
+.common-sprite, .header-logo {
+  background-image: url('../css/sp/common-s2fddca540a.png');
+  background-repeat: no-repeat;
+}
+
+/*screen for media query*/
+/*
+* {
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+	transition: 0.5s;
+}*/
+/* line 11, ../sass/basic.scss */
+.cf:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* line 20, ../sass/basic.scss */
+.ct {
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/basic.scss */
+.fl {
+  float: left;
+}
+
+/* line 26, ../sass/basic.scss */
+.fr {
+  float: right;
+}
+
+/* line 30, ../sass/basic.scss */
+.vblock, .vshow {
+  display: block;
+}
+
+/* line 33, ../sass/basic.scss */
+.hidden, .vhidden {
+  display: none;
+}
+
+/* line 36, ../sass/basic.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 41, ../sass/basic.scss */
+body {
+  font-family: Helvetica Neue,Hiragino Sans GB,Microsoft Yahei,WenQuanYi Micro Hei,sans-serif;
+}
+
+/*
+ *  put some common css below
+ * */
+/* line 48, ../sass/basic.scss */
+.header__branding {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 52, ../sass/basic.scss */
+.header-logo {
+  display: block;
+  width: 137px;
+  height: 45px;
+  text-indent: -1000px;
+  background-position: 0 0;
+}
+
+/*
+ *  component
+ * */
+/* line 64, ../sass/basic.scss */
+.validate-info {
+  margin-bottom: 10px;
+  border: 1px #F5D8A7 solid;
+  border-radius: 2px;
+  padding: 10px;
+  min-height: 18px;
+  _height: 18px;
+  background: #FFF6DB;
+  font-size: 12px;
+}
+
+/*
+ *  put some unique css below
+ * */
+/* line 78, ../sass/basic.scss */
+.login-section {
+  margin-top: 20px;
+}
+
+/*
+ *  media query
+ *  @media (max-width: @screen-xs-max) { ... }
+ *  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+ *  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+ *  @media (min-width: @screen-lg-min) { ... }
+ * */
+@media (max-width: 767px) {
+  /* line 92, ../sass/basic.scss */
+  .header__branding {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,96 @@
+@import "sp/common/index";
+@import "modules/basic-size";
+
+/*
+* {
+	-webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+	transition: 0.5s;
+}*/
+.cf {
+	&:after {
+		content:'';
+		display:block;
+		clear:both;
+		height:0;
+		overflow:hidden;
+		visibility:hidden;
+	}
+}
+.ct {
+	margin:0 auto;
+}
+.fl {
+	float:left;
+}
+.fr {
+	float:right;
+}
+
+.vblock, .vshow{
+    display: block;
+}
+.hidden, .vhidden{
+    display:none;
+}
+ul {
+    list-style-type:none;
+}
+
+
+body{font-family: Helvetica Neue,Hiragino Sans GB,Microsoft Yahei,WenQuanYi Micro Hei,sans-serif;}
+
+
+
+/*
+ *  put some common css below
+ * */
+.header__branding {
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.header-logo {
+    display: block;
+    width: 137px;
+    height: 45px;
+    text-indent: -1000px;
+    @include common-sprite(logo-lit);
+}
+
+
+/*
+ *  component
+ * */
+.validate-info {
+    margin-bottom: 10px;
+    border: 1px #F5D8A7 solid;
+    border-radius: 2px;
+    padding: 10px;
+    min-height: 18px;
+    _height: 18px;
+    background: #FFF6DB;
+    font-size: 12px;
+}
+
+/*
+ *  put some unique css below
+ * */
+.login-section {
+    margin-top:20px;
+}
+
+
+/*
+ *  media query
+ *  @media (max-width: @screen-xs-max) { ... }
+ *  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+ *  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+ *  @media (min-width: @screen-lg-min) { ... }
+ * */
+
+@media (max-width: $screen-xs-max) {
+    .header__branding {
+        margin-bottom:0;
+    }
+}
+
